@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Generador de Contraseña</title>
+</head>
+<body>
+    <main>
+        <div class="generalContainer">
+            <h1>
+                Generador de Contraseñas
+            </h1>
+            <p>
+                Configura la contraseña según tus necesidades. <br>
+                No olvides echarle un vistazo al respositorio en <a href="#">Github</a> y mi perfil en <a href="https://www.linkedin.com/in/guerrero-gil-antonio-0921/" target="_blank">Linkedin</a>
+            </p>
+            <section class="passContainer">
+                <label for="result">
+                    Contraseña Generada:
+                </label><br>
+                <input type="password" name="result" maxlength="20" id="result">
+                <button onclick="">Copiar</button>
+            </section>
+            <section class="configContainer">
+                <h2>
+                    Configura tu nueva contraseña
+                </h2>
+                <form id="passwordForm">
+                    <label for="lenght">
+                        Selecciona cuántos caracteres deseas en tu contraseña:
+                    </label>
+                    <select name="lenght" class="lenghtList">
+                            <option value="">
+                                --Elije una opción--
+                            </option>
+                            <option value="8">
+                                8 caracteres
+                            </option>
+                            <option value="9">
+                                9 caracteres
+                            </option>
+                            <option value="10">
+                                10 caracteres
+                            </option>
+                            <option value="11">
+                                11 caracteres
+                            </option>
+                            <option value="12">
+                                12 caracteres
+                            </option>
+                            <option value="13">
+                                13 caracteres
+                            </option>
+                            <option value="14">
+                                14 caracteres
+                            </option>
+                            <option value="15">
+                                15 caracteres
+                            </option>
+                            <option value="16">
+                                16 caracteres
+                            </option>
+                    </select>
+                    <div class="toggleswitchContainer">
+                        <label for="myonoffswitch">¿Deseas agregar mayúsculas?</label>
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchCaps" tabindex="0" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="toggleswitchContainer">
+                        <label for="myonoffswitch">¿Deseas agregar números?</label>
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchNumbers" tabindex="0" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="toggleswitchContainer">
+                        <label for="myonoffswitch">¿Deseas agregar caracteres especiales?</label>
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchSpecials" tabindex="0" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submitButton">Generar Contraseña</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="/script/script.js"></script>
+</body>
+</html>
