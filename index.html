@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/switchStyle.css">
     <title>Generador de Contraseña</title>
 </head>
 <body>
@@ -15,14 +16,16 @@
             </h1>
             <p>
                 Configura la contraseña según tus necesidades. <br>
-                No olvides echarle un vistazo al respositorio en <a href="#">Github</a> y mi perfil en <a href="https://www.linkedin.com/in/guerrero-gil-antonio-0921/" target="_blank">Linkedin</a>
+                No olvides echarle un vistazo al respositorio en <a href="https://github.com/AntonioG-G/PasswordGenerator" target="_blank">Github</a> y mi perfil en <a href="https://www.linkedin.com/in/guerrero-gil-antonio-0921/" target="_blank">Linkedin</a>
             </p>
             <section class="passContainer">
                 <label for="result">
                     Contraseña Generada:
                 </label><br>
-                <input type="password" name="result" maxlength="20" id="result">
-                <button onclick="">Copiar</button>
+                <input type="password" name="result" maxlength="20" id="result" readonly>
+                <button onclick="copyToClipboard()">Copiar</button>
+                <button id="revealButton" onclick="revealPassword()">Mostrar contraseña</button>
+
             </section>
             <section class="configContainer">
                 <h2>
@@ -32,7 +35,7 @@
                     <label for="lenght">
                         Selecciona cuántos caracteres deseas en tu contraseña:
                     </label>
-                    <select name="lenght" class="lenghtList">
+                    <select name="lenght" class="lenghtList" id="optionSelect" required>
                             <option value="">
                                 --Elije una opción--
                             </option>
@@ -65,30 +68,30 @@
                             </option>
                     </select>
                     <div class="toggleswitchContainer">
-                        <label for="myonoffswitch">¿Deseas agregar mayúsculas?</label>
+                        <label for="switchCaps">¿Deseas agregar mayúsculas?</label>
                         <div class="onoffswitch">
                             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchCaps" tabindex="0" checked>
-                            <label class="onoffswitch-label" for="myonoffswitch">
+                            <label class="onoffswitch-label" for="switchCaps">
                                 <span class="onoffswitch-inner"></span>
                                 <span class="onoffswitch-switch"></span>
                             </label>
                         </div>
                     </div>
                     <div class="toggleswitchContainer">
-                        <label for="myonoffswitch">¿Deseas agregar números?</label>
+                        <label for="switchNumbers">¿Deseas agregar números?</label>
                         <div class="onoffswitch">
                             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchNumbers" tabindex="0" checked>
-                            <label class="onoffswitch-label" for="myonoffswitch">
+                            <label class="onoffswitch-label" for="switchNumbers">
                                 <span class="onoffswitch-inner"></span>
                                 <span class="onoffswitch-switch"></span>
                             </label>
                         </div>
                     </div>
                     <div class="toggleswitchContainer">
-                        <label for="myonoffswitch">¿Deseas agregar caracteres especiales?</label>
+                        <label for="switchSpecials">¿Deseas agregar caracteres especiales?</label>
                         <div class="onoffswitch">
                             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switchSpecials" tabindex="0" checked>
-                            <label class="onoffswitch-label" for="myonoffswitch">
+                            <label class="onoffswitch-label" for="switchSpecials">
                                 <span class="onoffswitch-inner"></span>
                                 <span class="onoffswitch-switch"></span>
                             </label>
