@@ -1,5 +1,5 @@
 const rain = () =>{
-    let amount = 60;
+    let amount = 75;
     let field = document.getElementById('backeffect');
     let i = 0;
 
@@ -8,7 +8,7 @@ const rain = () =>{
         item.classList.add('effectObject');
         
         let size = Math.random() * (12 - 2) + 2;
-        let posX = Math.floor(Math.random() * (field.offsetWidth - (field.offsetWidth*-0.5)) + (field.offsetWidth*-0.5));
+        let posX = Math.floor(Math.random() * ((field.offsetWidth*1.25) - (field.offsetWidth*-0.75)) + (field.offsetWidth*-0.75));
         let posY = -76;
         let delay = Math.random()*(15-1)+1;
         let duration = Math.random()*(12-1)+1;
