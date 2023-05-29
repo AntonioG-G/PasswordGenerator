@@ -20,7 +20,7 @@
   display: block;
   overflow: hidden;
   cursor: pointer;
-  border: 2px solid #FFFFFF;
+  border-bottom: 2.5px solid #4285FF;
   border-radius: 25px;
 }
 
@@ -39,7 +39,7 @@
   padding: 0;
   line-height: 41px;
   font-size: 25px;
-  color: white;
+  color: #0E0E0E;
   font-family: Trebuchet, Arial, sans-serif;
   font-weight: bold;
   box-sizing: border-box;
@@ -48,15 +48,15 @@
 .onoffswitch-inner:before {
   content: "SI";
   padding-left: 14px;
-  background-color: #EEEEEE;
-  color: #34A7C1;
+  background-color: #0E0E0E;
+  color: #4285FF;
 }
 
 .onoffswitch-inner:after {
   content: "NO";
   padding-right: 14px;
-  background-color: #EEEEEE;
-  color: #999999;
+  background-color: #0E0E0E;
+  color: #F1F1F1;
   text-align: right;
 }
 
@@ -64,14 +64,18 @@
   display: block;
   width: 38px;
   margin: 1.5px;
-  background: #A1A1A1;
+  background: #F1F1F1;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 105px;
+  right: 108px;
   border: 2px solid #FFFFFF;
   border-radius: 25px;
   transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:not(:checked) + .onoffswitch-label {
+  border-bottom-color: #F1F1F1;
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
@@ -80,5 +84,5 @@
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
-  background-color: #34A7C1;
+  background-color: #4285FF;
 }/*# sourceMappingURL=switchStyle.css.map */
