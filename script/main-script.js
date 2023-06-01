@@ -7,8 +7,7 @@ const characters = {
 
 const form = document.getElementById('passwordForm');
 const result = document.getElementById('result');
-const background = document.getElementsByClassName("background")
-const gc = document.getElementsByClassName("generalContainer")
+
   
     form.addEventListener('submit', function(event) { 
         event.preventDefault();
@@ -63,5 +62,3 @@ const gc = document.getElementsByClassName("generalContainer")
     }).catch(err => alert("Error al copiar la contraseña: ", err))
     
   }
-  
-background.style.height = gc.style.height;

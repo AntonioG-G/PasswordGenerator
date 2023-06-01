@@ -55,14 +55,14 @@ button:active {
 }
 
 #copyButton {
-  background-image: url("/assets/copy color.png");
+  background-image: url("https://github.com/AntonioG-G/PasswordGenerator/blob/main/assets/copy-20color.png?raw=true");
   background-size: auto 65%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #revealButton {
-  background-image: url("/assets/eye-color2.png");
+  background-image: url("https://github.com/AntonioG-G/PasswordGenerator/blob/main/assets/eye-color2.png?raw=true");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
