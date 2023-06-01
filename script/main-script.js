@@ -7,6 +7,8 @@ const characters = {
 
 const form = document.getElementById('passwordForm');
 const result = document.getElementById('result');
+const background = document.getElementsByClassName("background")
+const gc = document.getElementsByClassName("generalContainer")
   
     form.addEventListener('submit', function(event) { 
         event.preventDefault();
@@ -62,3 +64,4 @@ const result = document.getElementById('result');
     
   }
   
+background.style.height = gc.style.height;

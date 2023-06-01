@@ -1,7 +1,5 @@
 .toggleswitchContainer {
   display: flex;
-  margin: 0 auto;
-  width: 400px;
 }
 
 .onoffswitch {
